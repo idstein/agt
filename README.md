@@ -1,4 +1,5 @@
 [![Build Status](https://travis-ci.com/idstein/agt.svg?token=QTWdMaqXyCvwHbkPxMwB&branch=master)](https://travis-ci.com/idstein/agt)
+[![codecov.io](https://codecov.io/github/idstein/agt/coverage.svg?branch=master)](https://codecov.io/github/idstein/agt?branch=master)
 
 ## Synopsis
 
