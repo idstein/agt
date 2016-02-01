@@ -5,3 +5,5 @@ before_install:
   - pip install --user codecov
 after_success:
   - codecov --token=15b37a52-98de-4d8b-a5ca-0b63ba9a431b
+notifications:
+  email: false
