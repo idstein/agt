@@ -61,10 +61,20 @@ The response JSON format follows a simple MOXy JAXB marshalling (example by call
 
 You should have a local Java 8 JRE installed and use it to run Maven.
 
+To create self-contained JARs run on the root folder of this checked out repository:
+
+`mvn package`
+
+Inside the target folder fo client-java and pathvisitor now existing a runnable jar. For the server executable copy any folder you would like to search next to the pathvisitor-VERSION.jar.
+
 ## Tests
 Run local tests with:
 
 `mvn test`
+
+## Run client
+
+`java -jar client-java-VERSION-with-dependencies.jar [path/relative/to/server/jar] [optional base urihttp://localhost:8080]`
 
 ## Third party
 

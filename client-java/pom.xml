@@ -29,6 +29,28 @@
 					<mainClass>info.idstein.client4j.ClientStarter</mainClass>
 				</configuration>
 			</plugin>
+			<plugin>
+				<artifactId>maven-assembly-plugin</artifactId>
+				<configuration>
+					<archive>
+						<manifest>
+							<mainClass>info.idstein.client4j.ClientStarter</mainClass>
+						</manifest>
+					</archive>
+					<descriptorRefs>
+						<descriptorRef>jar-with-dependencies</descriptorRef>
+					</descriptorRefs>
+				</configuration>
+				<executions>
+					<execution>
+						<id>make-assembly</id> <!-- this is used for inheritance merges -->
+						<phase>package</phase> <!-- bind to the packaging phase -->
+						<goals>
+							<goal>single</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
 		</plugins>
 	</build>
 
@@ -48,7 +70,6 @@
 		<dependency>
 			<groupId>info.idstein.agt</groupId>
 			<artifactId>api</artifactId>
-			<version>${project.version}</version>
 		</dependency>
 		<!-- Enable JAXB JSON feature -->
 		<dependency>
