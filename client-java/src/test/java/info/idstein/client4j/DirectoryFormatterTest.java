@@ -4,7 +4,6 @@ import static org.hamcrest.Matchers.containsString;
 import static org.hamcrest.Matchers.equalTo;
 import static org.junit.Assert.assertThat;
 
-import org.hamcrest.Matchers;
 import org.junit.Test;
 
 import info.idstein.services.pathvisitor.model.Directory;
