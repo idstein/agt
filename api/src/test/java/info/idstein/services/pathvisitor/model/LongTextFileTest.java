@@ -43,4 +43,15 @@ public class LongTextFileTest {
 						hasProperty("value", equalTo(wordCount))//
 		)));
 	}
+	
+	@Test
+	public void renderToString() {
+		final String name = "fooBar";
+		final long wordCount = 42l;
+		final Map<String, Long> frequencyByWord = new HashMap<>();
+		frequencyByWord.put(name, wordCount);
+
+		final LongTextFile file = new LongTextFile(name, wordCount, frequencyByWord);
+		assertThat(file.toString(), equalTo("fooBar 42 fooBar 42"));
+	}
 }

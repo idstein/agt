@@ -14,7 +14,7 @@ public interface ClientStarter {
 
 	public static void main(String[] args) {
 		final Client client = new Client(args.length == 2 ? args[1] : BASE_VISIT_SERVICE_URI);
-		Directory dir = client.visit(args.length == 1 ? args[0] : DEFAULT_LOCATION_PATH);
+		Directory dir = client.visit(args.length >= 1 ? args[0] : DEFAULT_LOCATION_PATH);
 		print("LONG",LongTextFile.class,dir);
 		print("SHORT",TextFile.class,dir);
 	}
