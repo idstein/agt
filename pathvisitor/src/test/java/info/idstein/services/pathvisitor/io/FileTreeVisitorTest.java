@@ -15,7 +15,7 @@ import mockit.Tested;
 
 public class FileTreeVisitorTest {
 	
-	private static final Path LOCATION_OF_NI = Paths.get("src/test/resources/Ni!");
+	private static final Path LOCATION_OF_NI = Paths.get("src/test/resources/Ni");
 	
 	@Tested
 	FileTreeVisitor visitor;
