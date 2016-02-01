@@ -22,8 +22,6 @@ A Java development task that demonstrates programming experience and skill for A
 2. As the IT department is known to change their mind with regards to the information they need from time to time, it must be possible to extend the service
 3. Ensure functionality with unit test and a high code coverage before handing it out to IT
 
-[Use case diagramm](https://www.lucidchart.com/invitations/accept/7bd9d298-3531-4e64-993f-ee86e93b487c)
-
 ## Code Example
 
 The webserver can be started using the following command inside the pathvisitor folder
