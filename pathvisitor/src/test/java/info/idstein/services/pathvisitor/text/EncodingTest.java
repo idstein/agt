@@ -34,7 +34,7 @@ public class EncodingTest {
 	public /* NOT private */ String encoding;
 
 	public EncodingTest(String encoding) {
-		input = Paths.get("src/test/resources/encoding/", encoding.toUpperCase() + ".txt");
+		input = Paths.get("src/test/resources/encoding/", encoding + ".txt");
 		this.encoding = encoding;
 	}
 
